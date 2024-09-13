@@ -1,0 +1,173 @@
+
+
+.inputs {
+  display: flex;
+  gap: 10px;
+}
+
+#peso, #altura{
+  text-align: center;
+  padding: 5px 0px;
+  margin-top: 5px;
+  font-weight: bold;
+  background-color: #f0f0f0
+}
+
+header {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.peso{
+display: flex;
+flex-direction: column;
+}
+
+.altura {
+display: flex;
+flex-direction: column;
+}
+
+.formulario button {
+  width: 100%;
+  max-width: 356px;
+  margin-top: 10px;
+
+
+}
+
+.formulario{
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  text-align: center;
+}
+
+  button {
+    padding: 5px 0px;
+    background-color: #f0f0f0;
+  }
+
+.container {
+
+  width: auto;
+  max-width: 1024px;
+
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  transform: scale(1.4);
+} 
+
+.imc-container {
+  background-color: #f0f0f0; 
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.imc-regua {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+
+}
+
+.imc-range {
+  display: flex;
+  height: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+
+.faixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.amarela {
+  background-color: rgb(211, 211, 31);
+  width: calc((18.5 - 5) / (50 - 5) * 100%);
+  text-shadow: 0px 0px 20px (#000);
+
+}
+
+.verde {
+  background-color: green;
+  width: calc((25 - 18.5) / (50 - 5) * 100%);
+
+}
+
+.laranja {
+  background-color: orange;
+  width: calc((30 - 25) / (50 - 5) * 100%);
+
+}
+
+.vermelha {
+  background-color: red;
+  width: calc((40 - 30) / (50 - 5) * 100%);
+
+}
+
+.vinho {
+  background-color: maroon;
+  width: calc((50 - 40) / (50 - 5) * 100%);
+
+}
+
+.visor {
+  position: absolute;
+  top: 50px;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(248, 52, 255, 0.8);
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  z-index: 1;
+
+}
+
+.visor::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent; 
+}
+
+#mensagem{
+  font-weight: bold ;
+  margin-top: 20px;
+  max-width: 1024;
+
+}
